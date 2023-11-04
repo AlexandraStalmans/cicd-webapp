@@ -12,8 +12,8 @@ export default (nrOfAnimals = 10) => {
     animals.push({
       id: i,
       name: animal({
-        type: 'pet',
-        locale: 'en_US',
+        type: "pet",
+        locale: "en_US",
       }),
     });
   }
