@@ -17,7 +17,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 app.use((_, res, next) => {
-  res.set("X-Database-Used", process.env.MONGO_URL ? "MongoDB" : "SQLite");
+  res.set('X-Database-Used", process.env.MONGO_URL ? "MongoDB" : "SQLite');
   next();
 });
 
