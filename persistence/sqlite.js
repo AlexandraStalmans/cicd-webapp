@@ -27,7 +27,7 @@ export async function initialize() {
     await db.exec(
       `INSERT INTO animal(name) VALUES${data
         .map((animal) => `('${animal.name}')`)
-        .join(',')}`
+        .join(',')}`,
     );
     console.log('Fake data generated');
   }
