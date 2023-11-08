@@ -20,7 +20,7 @@ jobs:
       - name: Start Application
         run: yarn start &
       - name: Wait for Application
-        run: sleep 10
+        run: sleep 5
       - name: Run Tests
         run: yarn test test.spec.js
       - name: Login to Docker Hub
